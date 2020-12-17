@@ -1,7 +1,7 @@
-console.log("inside sdkMethod.js");
+console.log(">>>>>>>>>> inside sdkMethod.js");
 errorMessage = document.getElementById("errorMessage");
-chatText = "chatTranscript.lines";
-console.log(chatText);
+// chatText = "chatTranscript.lines";
+console.log(>>>>>>>>>> chatText);
 
  
 
