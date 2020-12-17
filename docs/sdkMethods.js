@@ -1,8 +1,7 @@
 console.log(">>>>>>>>>> inside sdkMethod.js");
 errorMessage = document.getElementById("errorMessage");
-// chatText = "chatTranscript.lines";
-console.log(">>>>>>>>>> chatText: "+ chatText);
-chatText = "chatTranscript.lines";
+pathToData = "chatTranscript.lines";
+console.log(">>>>>>>>>> pathToData: "+ pathToData);
 
  
 
@@ -27,14 +26,11 @@ var updateCallback = function(data){
                     document.getElementById("Title").innerHTML = res.Title;
                     document.getElementById("Year").innerHTML = res.Year;
                     document.getElementById("Rated").innerHTML = res.Rated;
-                    document.getElementById("Released").innerHTML = res.Released;
-                    document.getElementById("Runtime").innerHTML = res.Runtime;
-                    document.getElementById("Genre").innerHTML = res.Genre;
-                    document.getElementById("Director").innerHTML = res.Director;
                     document.getElementById("Actors").innerHTML = res.Actors;
+                    document.getElementById("Genre").innerHTML = res.Genre;
                     document.getElementById("Plot").innerHTML = res.Plot;
-                    document.getElementById("Awards").innerHTML = res.Awards;
-                    document.getElementById("imdbRating").innerHTML = res.imdbRating;
+
+ 
 
                 }).catch(function(error){
                     console.log("I am inside catch");
@@ -49,11 +45,11 @@ var notifyWhenDone = function(error) {
     if (err){
         console.log("I am inside notifyWhenDone function : "+err);
     }
-    var chatText = "chatTranscript.lines";
+    var pathToData = "chatTranscript.lines";
     errorMessage.innerHTML = "Unable to find the movie";
 };
 
  
 
 lpTag.agentSDK.init({});
-lpTag.agentSDK.bind(chatText, updateCallback, notifyWhenDone);
+lpTag.agentSDK.bind(pathToData, updateCallback, notifyWhenDone);
