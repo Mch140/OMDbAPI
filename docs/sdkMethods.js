@@ -6,7 +6,8 @@ console.log(">>>>>>>>>> pathToData: "+ pathToData);
  
 
 var updateCallback = function(data){
-    console.log(">>>>>>>>>> data in updateCallback: "+ JSON.stringify(data));
+    console.log(">>>>>>>>>> data in updateCallback: ")
+    console.log(JSON.stringify(data));
     var path = data.key;
     console.log(">>>>>>>>>> data.key in updateCallback: "+ path);
     var value = data.newValue;
