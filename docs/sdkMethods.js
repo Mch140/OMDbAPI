@@ -30,6 +30,11 @@ var updateCallback = function(data){
                     document.getElementById("Actors").innerHTML = res.Actors;
                     document.getElementById("Genre").innerHTML = res.Genre;
                     document.getElementById("Plot").innerHTML = res.Plot;
+                    document.getElementById("Released").innerHTML = res.Released;
+                    document.getElementById("Runtime").innerHTML = res.Runtime;
+                    document.getElementById("Director").innerHTML = res.Director;
+                    document.getElementById("Awards").innerHTML = res.Awards;
+                    document.getElementById("imdbRating").innerHTML = res.imdbRating;
 
  
 
